@@ -1,0 +1,62 @@
+body{
+    background-image: linear-gradient(to right, #227, #101015);
+}
+
+.entry{
+    transform: scale(1.00);
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+}
+
+.entry:hover{
+    box-shadow: 0px 0px 5px 5px white;
+    transition-duration: 0.2s;
+    transition-property: animation, transform;
+    transition-timing-function: ease-in;
+    animation: blinkw 4s linear infinite;
+    transform: scale(1.01);
+}
+
+.card{
+    background-image: linear-gradient(to left, #444, #101015);
+    transition-duration: 0.2s;
+    transition-property: animation, transform;
+    transition-timing-function: ease-in;
+}
+
+.card:hover{
+    box-shadow: 0px 0px 5px 5px;
+    transform: scale(1.01);
+}
+
+.highlight-green:hover{
+    box-shadow: 0px 0px 5px 5px #00C851;
+    animation: blinkg 4s linear infinite;
+}
+
+.highlight-red:hover{
+    box-shadow: 0px 0px 5px 5px #FF4444;
+    animation: blinkr 4s linear infinite;
+}
+
+.entry{
+    background-image: linear-gradient(to left, #444, #101015);
+}
+
+@keyframes blinkg {
+    50% {
+        box-shadow: 0 0 5px 5px #007E33;
+    }
+}
+
+@keyframes blinkr {
+    50% {
+        box-shadow: 0 0 5px 5px #CC0000;
+    }
+}
+
+@keyframes blinkw {
+    50% {
+        box-shadow: 0 0 5px 5px #888;
+    }
+}
